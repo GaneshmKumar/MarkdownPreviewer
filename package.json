@@ -1,0 +1,44 @@
+{
+  "name": "markdownpreviewer",
+  "version": "1.0.0",
+  "description": "A Simple Markdown Previewer using ReactJS",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node_modules/.bin/esw webpack.config.* src",
+    "lint:watch": "npm run lint -- --watch",
+    "lint:fix": "node_modules/.bin/eslint webpack.config.* src --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GaneshmKumar/MarkdownPreviewer.git"
+  },
+  "keywords": [
+    "markdown-previewer",
+    "reactjs",
+    "freecodecamp"
+  ],
+  "author": "GaNeShKuMaRm",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GaneshmKumar/MarkdownPreviewer/issues"
+  },
+  "homepage": "https://github.com/GaneshmKumar/MarkdownPreviewer#readme",
+  "dependencies": {
+    "prop-types": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "eslint-watch": "^3.1.3"
+  }
+}
