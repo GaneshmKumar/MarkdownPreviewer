@@ -4,7 +4,9 @@ import Editor from '../Editor/Editor';
 import Previewer from '../Previewer/Previewer';
 import './Markdown.scss';
 
-const initialText = '#Reactjs\n* ganesh\n* kumar\n* [ganesh](kumar)\n## Reactjs\n### Reactjs';
+const initialText =
+  localStorage.getItem('text') ||
+  '#Reactjs\n* ganesh\n* kumar\n* [ganesh](kumar)\n## Reactjs\n### Reactjs';
 
 class Markdown extends Component {
   constructor () {
@@ -24,6 +26,10 @@ class Markdown extends Component {
     return (scrollTop / (scrollHeight - offsetHeight)) * 100;
   }
 
+  updateLocalStorage (text) {
+    localStorage.setItem('text', text);
+  }
+
   handleScroll (e) {
     const scrollPercentage = this.getScrollPercentage(e.target);
 
@@ -40,6 +46,8 @@ class Markdown extends Component {
       md,
       text
     }));
+
+    this.updateLocalStorage(text);
   }
 
   render () {
