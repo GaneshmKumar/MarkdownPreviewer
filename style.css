@@ -1,20 +1,35 @@
-@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Roboto|Righteous);body {
+@import url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans|Roboto|Righteous|Questrial);body {
   margin: 0px 0px; }
+.nav-bar {
+  background: #373D49;
+  border-color: #373D49;
+  padding: 16px 20px 10px 20px; }
+  .nav-bar .app-title {
+    color: #fafafa;
+    font-size: 20px;
+    font-family: 'Questrial';
+    letter-spacing: 2px; }
 .editor {
   overflow: auto;
   resize: none;
-  padding: 10px 10px;
-  outline: none; }
-.markdown {
-  display: grid;
-  grid-template-columns: 50% 50%; }
+  padding: 25px 25px;
+  outline: none;
+  border-color: #D3DAEA;
+  border-bottom-color: transparent;
+  font-size: 15px;
+  font-family: 'Roboto';
+  color: #373D49;
+  letter-spacing: 1px; }
 .previewer {
-  padding: 10px 10px;
+  padding: 25px 25px;
   overflow: auto;
-  font-family: 'IBM Plex Sans';
-  color: #272727;
+  font-family: 'Roboto';
+  color: #373D49;
   word-wrap: break-word;
   max-height: 100%;
+  border: solid 1px #D3DAEA;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
   /* Custom Markdown Styles */ }
   .previewer > *:first-child {
     margin-top: 0px; }
@@ -22,7 +37,6 @@
     margin: 5px 5px; }
   .previewer h1, .previewer h2, .previewer h3, .previewer h5, .previewer h5, .previewer h6 {
     margin-top: 20px;
-    border-bottom: solid 1px #DDDDDD;
     padding-bottom: 5px; }
   .previewer a {
     color: #0366D6;
@@ -33,10 +47,44 @@
   .previewer code {
     padding: 2px 2px;
     background: grey; }
+  .previewer hr {
+    height: 1px;
+    color: #DDDDDD;
+    background-color: #DDDDDD;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+.markdown {
+  display: grid;
+  grid-template-rows: 7% 93%;
+  grid-template-columns: 50% 50%; }
+
+.title {
+  border: solid 1px #D3DAEA;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: 11px 25px;
+  font-size: 12px;
+  font-family: 'IBM Plex Sans';
+  font-weight: bold;
+  color: #373D49;
+  letter-spacing: 1.5px;
+  background: #F7FAFC; }
+.footer {
+  background: #373D49;
+  color: #FAFAFA;
+  text-align: center;
+  padding-top: 6px;
+  font-size: 11px;
+  font-family: 'Roboto';
+  letter-spacing: 1px; }
+  .footer a {
+    text-decoration: none;
+    color: inherit; }
 .container {
   display: grid;
-  grid-template-rows: 10% 85% 5%;
+  grid-template-rows: 8% 88% 4%;
   grid-template-columns: 100%;
-  height: calc(100vh - 10px); }
+  height: 100vh; }
 
 /*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzdHlsZS5jc3MiLCJzb3VyY2VSb290IjoiIn0=*/
