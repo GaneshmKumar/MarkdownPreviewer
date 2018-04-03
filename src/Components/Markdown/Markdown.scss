@@ -1,4 +1,18 @@
 .markdown {
   display: grid;
+  grid-template-rows: 7% 93%;
   grid-template-columns: 50% 50%;
+}
+
+.title {
+  border: solid 1px #D3DAEA;
+  border-bottom-color: transparent;
+  border-left-color: transparent;
+  padding: 11px 25px;
+  font-size: 12px;
+  font-family: 'IBM Plex Sans';
+  font-weight: bold;
+  color: #373D49;
+  letter-spacing: 1.5px;
+  background: #F7FAFC;
 }

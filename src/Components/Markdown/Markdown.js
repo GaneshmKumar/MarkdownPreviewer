@@ -53,6 +53,8 @@ class Markdown extends Component {
   render () {
     return (
       <div className="markdown">
+        <div className="title">MARKDOWN</div>
+        <div className="title">PREVIEW</div>
         <Editor
           handleTextChange={e => this.handleTextChange(e)}
           handleScroll={e => this.handleScroll(e)}

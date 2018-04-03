@@ -1,10 +1,13 @@
 .previewer {
-  padding: 10px 10px;
+  padding: 25px 25px;
   overflow: auto;
-  font-family: 'IBM Plex Sans';
-  color: #272727;
+  font-family: 'Roboto';
+  color: #373D49;
   word-wrap: break-word;
   max-height: 100%;
+  border: solid 1px #D3DAEA;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
 
   /* Custom Markdown Styles */
   & > *:first-child {
@@ -17,7 +20,6 @@
 
   h1, h2, h3, h5, h5, h6 {
     margin-top: 20px;
-    border-bottom: solid 1px #DDDDDD;
     padding-bottom: 5px;
   }
 
@@ -34,6 +36,15 @@
   code {
     padding: 2px 2px;
     background: grey;
+  }
+
+  hr {
+    height: 1px;
+    color: #DDDDDD;
+    background-color: #DDDDDD;
+    border: none;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 }
 

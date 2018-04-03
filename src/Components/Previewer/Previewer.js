@@ -10,7 +10,7 @@ class Previewer extends Component {
     const scrollPercentage =
       (this.previewerElement.scrollHeight * this.props.scrollPercentage) / 100;
 
-    this.previewerElement.scrollTop = Math.round(this.props.scrollPercentage) === 0
+    this.previewerElement.scrollTop = Math.floor(this.props.scrollPercentage) === 0
       ? 0
       : scrollPercentage + 20;
   }
