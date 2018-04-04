@@ -3,14 +3,18 @@
 .nav-bar {
   background: #373D49;
   border-color: #373D49;
-  padding: 16px 20px 10px 20px; }
+  position: relative; }
   .nav-bar .app-title {
+    position: absolute;
+    top: 36%;
+    left: 25px;
     color: #fafafa;
     font-size: 20px;
     font-family: 'Questrial';
     letter-spacing: 2px; }
 .editor {
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   resize: none;
   padding: 25px 25px;
   outline: none;
@@ -22,7 +26,8 @@
   letter-spacing: 1px; }
 .previewer {
   padding: 25px 25px;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: 'Roboto';
   color: #373D49;
   word-wrap: break-word;
@@ -70,14 +75,23 @@
   color: #373D49;
   letter-spacing: 1.5px;
   background: #F7FAFC; }
+
+.markdown-icon, .preview-icon {
+  color: #373D49;
+  font-size: 13px;
+  margin-right: 3px; }
 .footer {
   background: #373D49;
-  color: #FAFAFA;
   text-align: center;
-  padding-top: 6px;
   font-size: 11px;
   font-family: 'Roboto';
-  letter-spacing: 1px; }
+  letter-spacing: 1px;
+  position: relative;
+  color: #FAFAFA; }
+  .footer .copyright {
+    position: absolute;
+    top: 34%;
+    left: 41%; }
   .footer a {
     text-decoration: none;
     color: inherit; }
