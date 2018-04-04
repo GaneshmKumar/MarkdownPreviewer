@@ -1,5 +1,6 @@
 .editor {
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   resize: none;
   padding: 25px 25px;
   outline: none;

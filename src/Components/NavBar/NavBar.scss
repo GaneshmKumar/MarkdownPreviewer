@@ -1,9 +1,12 @@
 .nav-bar {
   background: #373D49;
   border-color: #373D49;
-  padding: 16px 20px 10px 20px;
+  position: relative;
 
   .app-title {
+    position: absolute;
+    top: 36%;
+    left: 25px;
     color: #fafafa;
     font-size: 20px;
     font-family: 'Questrial';

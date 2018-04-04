@@ -6,7 +6,7 @@ import './Markdown.scss';
 
 const initialText =
   localStorage.getItem('text') ||
-  '#Reactjs\n* ganesh\n* kumar\n* [ganesh](kumar)\n## Reactjs\n### Reactjs';
+  'Heading\n=======\n\n## Sub-heading\nParagraphs are separated by a blank line.\n\nTwo spaces at the end of a line produces a line break.\nText attributes _italic_,**bold**, `monospace`.\n\nHorizontal rule:\n\n---\n\nBullet list:\n\n* apples\n* oranges\n* pears\n\nNumbered list:\n1. wash\n2. rinse\n3. repeat\nA [link](http://example.com).\n\n![Image](https://avatars3.githubusercontent.com/u/857949?s=460&v=4)';
 
 class Markdown extends Component {
   constructor () {
@@ -32,7 +32,6 @@ class Markdown extends Component {
 
   handleScroll (e) {
     const scrollPercentage = this.getScrollPercentage(e.target);
-
     this.setState(() => ({
       scrollPercentage
     }));
@@ -53,8 +52,12 @@ class Markdown extends Component {
   render () {
     return (
       <div className="markdown">
-        <div className="title">MARKDOWN</div>
-        <div className="title">PREVIEW</div>
+        <div className="title">
+          <i className="fas fa-code markdown-icon" /> MARKDOWN
+        </div>
+        <div className="title">
+          <i className="fas fa-eye preview-icon" /> PREVIEW
+        </div>
         <Editor
           handleTextChange={e => this.handleTextChange(e)}
           handleScroll={e => this.handleScroll(e)}

@@ -1,11 +1,17 @@
 .footer {
   background: #373D49;
-  color: #FAFAFA;
   text-align: center;
-  padding-top: 6px;
   font-size: 11px;
   font-family: 'Roboto';
   letter-spacing: 1px;
+  position: relative;
+  color: #FAFAFA;
+
+  .copyright {
+    position: absolute;
+    top: 34%;
+    left: 41%;
+  }
 
   a {
     text-decoration: none;

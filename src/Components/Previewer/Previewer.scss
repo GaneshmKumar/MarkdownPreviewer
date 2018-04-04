@@ -1,6 +1,7 @@
 .previewer {
   padding: 25px 25px;
-  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
   font-family: 'Roboto';
   color: #373D49;
   word-wrap: break-word;
