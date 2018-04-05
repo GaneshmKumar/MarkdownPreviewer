@@ -4,7 +4,7 @@
   grid-template-columns: 50% 50%;
 }
 
-.title {
+.title-wrapper {
   border: solid 1px #D3DAEA;
   border-bottom-color: transparent;
   border-left-color: transparent;
@@ -15,6 +15,12 @@
   color: #373D49;
   letter-spacing: 1.5px;
   background: #F7FAFC;
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 36%;
 }
 
 .markdown-icon, .preview-icon {

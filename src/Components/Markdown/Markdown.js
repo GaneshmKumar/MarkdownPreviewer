@@ -52,11 +52,15 @@ class Markdown extends Component {
   render () {
     return (
       <div className="markdown">
-        <div className="title">
-          <i className="fas fa-code markdown-icon" /> MARKDOWN
+        <div className="title-wrapper">
+          <div className="title">
+            <i className="fas fa-code markdown-icon" /> MARKDOWN
+          </div>
         </div>
-        <div className="title">
-          <i className="fas fa-eye preview-icon" /> PREVIEW
+        <div className="title-wrapper">
+          <div className="title">
+            <i className="fas fa-eye preview-icon" /> PREVIEW
+          </div>
         </div>
         <Editor
           handleTextChange={e => this.handleTextChange(e)}
